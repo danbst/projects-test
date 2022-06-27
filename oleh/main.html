@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            div.rotate1 {
+				background: url(cross.png);
+				width: 50px;
+				height: 50px;
+			}
+			div.rotate1:hover {
+				background: url(cross_2.png);
+			}
+            div.rotate2 {
+				background: url(check_mark.png); 
+				width: 50px; 
+				height: 50px;
+			}
+			div.rotate2:hover {
+				background: url(check_mark_2.png);
+			}
+
+      .box{
+        position: absolute;
+        left:0;
+        right:0;
+        margin: 0 auto;
+        top: 50%;
+      }
+
+      .footer{
+      margin-top: auto;
+      }
+
+      .page{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .content{
+        margin: auto auto;
+      }
+      </style>
+	</head>
+    <body background="Phon.jpg" width="100%" height="100%">
+    <div class="page">
+      <nav class="flex items-center justify-between flex-wrap bg-violet-700 p-6">
+          <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M 52 2 L 24 24 L 30 32 L 11 54 L 45 33 L 38 24 L 52 2"/></svg>
+            <a class="font-semibold text-xl tracking-tight" href="main.html">Thunder</a>
+          </div>
+          <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-violet-200 border-violet-400 hover:text-white hover:border-white">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a href="thunder.html" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+                <font size="4"> <b>Запропонована пара</b> </font>
+              </a>
+              <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+                <font size="4"> <b>Вподобані</b> </font>
+              </a>
+              <a href="component.html" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+                <font size="4"> <b>Заплановані побачення</b> </font>
+              </a>
+              <a href="prices.html" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+                <font size="4"> <b>Thunder +</b> </font>
+              </a>
+            </div>
+            <div>
+              <a href="https://tlauncher.org/installer" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-violet-700 hover:bg-white mt-4 lg:mt-0"><font size="4"> <b>Завантажити додаток</b> </font></a>
+            </div>
+        </nav>
+        <div class="content">
+          <form class="w-full max-w-lg">
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                  Ім'я
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Петро">
+                <p class="text-black-500">Будь ласка, заповніть це поле.</p>
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                  Прізвище
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Порошенко">
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                  Пароль
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="********">
+                <p class="text-black-600">Пароль має бути не менше 8 символів.</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-2">
+              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                  Вік
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="18">
+              </div>
+              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                  Країна
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Україна">
+              </div>
+              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                  Місто
+                </label>
+                <div class="relative">
+                  <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                    <option>Київ</option>
+                    <option>Запоріжжя</option>
+                    <option>Львів</option>
+                    <option>Дніпро</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-7 py-9">
+              <a href="thunder.html" class="bg-violet-500 hover:bg-violet-400 text-white font-bold py-3 px-40 border-b-4 border-violet-700 hover:border-violet-500 rounded">
+                Зареєструватися</a>
+            </div>
+          </form>
+        </div>
+        <footer class="footer p-4 bg-white shadow md:px-6 md:py-6 dark:bg-indigo-900">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+              <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M 52 2 L 24 24 L 30 32 L 11 54 L 45 33 L 38 24 L 52 2"/></svg>
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Thunder</span>
+            </div>
+              <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                  <li>
+                      <a href="#" class="mr-4 hover:underline md:mr-6 ">Про нас</a>
+                  </li>
+                  <li>
+                      <a href="#" class="mr-4 hover:underline md:mr-6">Політика конфіденційності</a>
+                  </li>
+                  <li>
+                      <a href="#" class="mr-4 hover:underline md:mr-6 ">Ліцензування</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Контакти</a>
+                  </li>
+              </ul>
+          </div>
+          <hr class="my-6 border-white-200 sm:mx-auto dark:border-white-700 lg:my-6" />
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="" class="hover:underline">Thunder™</a> Всі права захищені.
+          </span>
+      </footer>
+  </div>
+	</body>
+</html>

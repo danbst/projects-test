@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    .box{
+          height: 500px;
+          width: 400px;
+      }
+    .a {
+      position: absolute;
+      left: 170px;
+      margin: 0 auto;
+      top:15%;
+        }
+    .b {
+      position: absolute;
+      left:0;
+      right:0;
+      margin: 0 auto;
+      top:15%;
+    }
+    .c {
+      position: absolute;
+      right:170px;
+      margin: 0 auto;
+      top:15%;
+    }
+
+    .footer{
+      margin-top: auto;
+      }
+
+      .page{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .content{
+        margin: auto auto;
+      }
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body background="Phon.jpg" width="100%" height="100%">
+<div class="page">
+  <nav class="flex items-center justify-between flex-wrap bg-violet-700 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M 52 2 L 24 24 L 30 32 L 11 54 L 45 33 L 38 24 L 52 2"/></svg>
+      <a class="font-semibold text-xl tracking-tight" href="main.html">Thunder</a>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-violet-200 border-violet-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="thunder.html" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+          <font size="4"> <b>Запропонована пара</b> </font>
+        </a>
+        <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+          <font size="4"> <b>Вподобані</b> </font>
+        </a>
+        <a href="component.html" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+          <font size="4"> <b>Заплановані побачення</b> </font>
+        </a>
+        <a href="prices.html" class="block mt-4 lg:inline-block lg:mt-0 text-violet-200 hover:text-white mr-4">
+          <font size="4"> <b>Thunder +</b> </font>
+        </a>
+      </div>
+      <div>
+        <a href="https://tlauncher.org/installer" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-violet-700 hover:bg-white mt-4 lg:mt-0"><font size="4"> <b>Завантажити додаток</b> </font></a>
+      </div>
+    </div>
+  </nav>
+    <div class="content">
+      <div class="shadow-lg box a"><div class="box bg-gradient-to-t from-violet-400 to-violet-700 rounded text-2xl text-white">
+        <div class="px-9 py-5"><font size="10"><b>Для нових користовачів</b></font></div>
+        <div class=" box rounded text-white"> <div class="px-4"><font size="5">Базові функції Thunder для новачків</font></div>
+        <div class="px-5 py-60">
+          <button class="bg-white rounded text-indigo-600 hover:text-white px-40 py-2 hover:bg-violet-700">
+            0$
+          </button>
+      </div></div></div></div>
+      <div class="shadow-lg box b"><div class="box bg-gradient-to-t from-violet-400 to-indigo-700 rounded text-2xl text-white">
+        <div class="px-9 py-5"><font size="10"><b>Для активних користувачів</b></font></div>
+        <div class=" box rounded text-white"> <div class="px-4"><font size="5">Оформлення власного профілю та чату</font></div>
+        <div class="px-5 py-60">
+          <button class="bg-white rounded text-indigo-600 hover:text-white px-40 py-2 hover:bg-violet-700">
+            10$
+          </button>
+      </div></div></div></div>
+      <div class="shadow-lg box c"><div class="box bg-gradient-to-t from-violet-400 to-pink-600 rounded text-2xl text-white">
+        <div class="px-9 py-5"><font size="10"><b>Для преміум-користувачiв</b></font></div>
+        <div class=" box rounded text-white"> <div class="px-4"><font size="5">Покращені фільтри пошуку пари для вас</font></div>
+        <div class="px-5 py-60">
+          <button class="bg-white rounded text-indigo-600 hover:text-white px-40 py-2 hover:bg-violet-700">
+            50$
+          </button>
+      </div></div></div></div>
+    </div>
+    <footer class="footer p-4 bg-white shadow md:px-6 md:py-6 dark:bg-indigo-900">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M 52 2 L 24 24 L 30 32 L 11 54 L 45 33 L 38 24 L 52 2"/></svg>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Thunder</span>
+        </div>
+          <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6 ">Про нас</a>
+              </li>
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6">Політика конфіденційності</a>
+              </li>
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6 ">Ліцензування</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Контакти</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-white-200 sm:mx-auto dark:border-white-700 lg:my-6" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="" class="hover:underline">Thunder™</a> Всі права захищені.
+      </span>
+  </footer>
+</div>
+</body>
+</html>
